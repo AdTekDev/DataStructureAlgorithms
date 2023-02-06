@@ -24,6 +24,34 @@ public class ArrayList<E>  // implements List<E>
 		return true;	
 	}
 	
+	public E get(int index) {
+		if (checkIndex(index))
+			return this.getElement(index);
+		else
+			return null;
+	}
+	
+	public E set(int index, E newValue) {
+		if (index >= 0 && index <= size) {
+			E oldvalue = (E) this.elements[index];
+			//...
+			this.elements[index] = newValue;
+			return oldvalue;
+		} else 
+			return null;
+	}
+	
+	private boolean checkIndex(int index) {
+		if (index >= 0 && index <= size) {
+			return true;
+		} else 
+			return false;
+	}
+	
+	private E getElement(int index) {
+		return (E) this.elements[index];
+	}
+	
 	public void ShowList() {
 		System.out.println("\n\nDanh sach phan tu: " + size);
 		for(int i = 0; i < size; i++) {
