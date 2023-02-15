@@ -7,6 +7,7 @@ import nodepack.Node;
 import linkedpack.Stack;
 import linkedpack.Queue;
 import linkedpack.SinglyLinkedList;
+import applicationpack.StudentLinkedList;
 
 public class mainApp {
 
@@ -14,7 +15,7 @@ public class mainApp {
 		// TODO Auto-generated method stub
 		System.out.println("Demo - Linear Data ADT");
 		
-		SinglyLinkedList<Student>  xlist = new SinglyLinkedList<Student>();
+		StudentLinkedList  xlist = new StudentLinkedList();
 		
 		xlist.addFirst(new Student("A Tu", 'M', 6.9));
 		xlist.addFirst(new Student("A Ka", 'M', 3));
@@ -23,6 +24,9 @@ public class mainApp {
 		xlist.addFirst(new Student("A Ty", 'F', 9));
 		
 		xlist.showObjectInSinglyList();
+		
+		System.out.println("... in ds sv > 5");
+		xlist.showStudentListHighGPA(5);
 		
 		
 		

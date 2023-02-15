@@ -3,16 +3,24 @@ package linkedpack;
 
 public class SinglyLinkedList<E> {
 	
-	private static class iNode<E> {
-		private E element;
-		private iNode<E> next;
+	protected static class iNode<E> {
+		protected E element;
+		protected iNode<E> next;
 		
 		public iNode(E element) {
 			this.element = element;
 		}
+		
+		public E getElement() {
+			return element;
+		}
+		
+		public iNode<E> getNext() {
+			return next;
+		}
 	}
-	private iNode<E> head;
-	private int size;
+	protected iNode<E> head;
+	protected int size;
 	
 	public SinglyLinkedList() {
 		head = null;
