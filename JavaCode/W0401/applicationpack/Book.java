@@ -37,4 +37,12 @@ public class Book {
 	public String toString() {
 		return  ID + ". " + TenSach + ". " + cacTacGia + ". " + Gia;
 	}
+	
+	public boolean hasTacGia(String tg) {
+		return cacTacGia.contains(tg);
+	}
+	
+	public boolean hasTieuDe(String td) {
+		return TenSach.contains(td);
+	}
 }
