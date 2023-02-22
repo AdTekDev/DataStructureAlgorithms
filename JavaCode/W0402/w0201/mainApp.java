@@ -4,6 +4,7 @@ import arraylistpack.ArrayList;
 import applicationpack.Student;
 
 import nodepack.Node;
+import recursivepack.TSamples;
 import linkedpack.Stack;
 import linkedpack.Queue;
 import linkedpack.SinglyLinkedList;
@@ -20,6 +21,15 @@ public class mainApp {
 		// TODO Auto-generated method stub
 		System.out.println("Demo - Linear Data ADT");
 		
+		
+		//TSamples.printFigure(10);
+		
+		TSamples.putQueens(0);
+		
+		
+	}
+	
+	public void oldcode02() {
 		BookLinkedList listbook = new BookLinkedList();
 		
 		
@@ -39,13 +49,10 @@ public class mainApp {
 		
 		listbook.showBooksAuthorList();
 		
-		
-		
-		
 	}
 	
-	
 	public void oldCode() {
+	
 		StudentLinkedList  xlist = new StudentLinkedList();
 		
 		xlist.addStudentOrderedByName(new Student("A Tu", 'M', 6.9));
